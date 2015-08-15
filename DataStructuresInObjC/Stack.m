@@ -25,7 +25,14 @@
     self.topNode = childNode;
 }
 
--(void)pop{
+-(NSNumber *)pop{
+    
+    if (!self.topNode) {
+        return nil;
+    }
+    LLNode *nodeToPop = self.topNode;
+    self.topNode = nodeToPop.nextNode;
+    return nodeToPop.key;
 }
 
 -(NSNumber *)peek{

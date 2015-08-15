@@ -75,7 +75,8 @@
 -(void)pushIntoStack{
     for (NSNumber *key in self.numberList) {
         [self.stack pushWithKey:key];
-    }    
+    }
+    [self.stack pop];
 }
 
 -(void)enQueue{

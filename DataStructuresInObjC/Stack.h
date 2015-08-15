@@ -10,7 +10,7 @@
 
 @interface Stack : NSObject
 @property (nonatomic, assign) int count;
--(void)pop;
+-(NSNumber *)pop;
 -(void)pushWithKey:(NSNumber *)key;
 -(NSNumber *)peek;
 -(BOOL)isEmpty;
