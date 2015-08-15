@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface LinkedList : NSObject
-
+@property (nonatomic, assign) int count;
 -(void)addLinkWithKey:(NSNumber *)key;
-
+-(void)removeLinkAtIndex:(NSNumber *)index;
+-(int)countLinkedList;
 @end

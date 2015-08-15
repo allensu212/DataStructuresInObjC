@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE5D6FF91B7F723E004AB240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FF81B7F723E004AB240 /* main.m */; };
 		BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */; };
-		BE5D6FFF1B7F723E004AB240 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */; };
+		BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFE1B7F723E004AB240 /* WSLabViewController.m */; };
 		BE5D70021B7F723E004AB240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70001B7F723E004AB240 /* Main.storyboard */; };
 		BE5D70041B7F723E004AB240 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70031B7F723E004AB240 /* Images.xcassets */; };
 		BE5D70071B7F723E004AB240 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70051B7F723E004AB240 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		BE5D6FF81B7F723E004AB240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE5D6FFA1B7F723E004AB240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE5D6FFD1B7F723E004AB240 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BE5D6FFD1B7F723E004AB240 /* WSLabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSLabViewController.h; sourceTree = "<group>"; };
+		BE5D6FFE1B7F723E004AB240 /* WSLabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSLabViewController.m; sourceTree = "<group>"; };
 		BE5D70011B7F723E004AB240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE5D70031B7F723E004AB240 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE5D70061B7F723E004AB240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 				BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */,
 				BE5D701D1B7F727A004AB240 /* Source */,
 				BE5D701C1B7F7274004AB240 /* Controller */,
-				BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */,
 				BE5D70031B7F723E004AB240 /* Images.xcassets */,
 				BE5D70001B7F723E004AB240 /* Main.storyboard */,
 				BE5D70051B7F723E004AB240 /* LaunchScreen.xib */,
@@ -129,7 +128,8 @@
 		BE5D701C1B7F7274004AB240 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BE5D6FFD1B7F723E004AB240 /* MasterViewController.h */,
+				BE5D6FFD1B7F723E004AB240 /* WSLabViewController.h */,
+				BE5D6FFE1B7F723E004AB240 /* WSLabViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5D6FFF1B7F723E004AB240 /* MasterViewController.m in Sources */,
+				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
 				BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */,
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,

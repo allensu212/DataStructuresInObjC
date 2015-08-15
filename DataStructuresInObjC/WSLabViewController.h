@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UIViewController
-
+@interface WSLabViewController : UIViewController
 
 @end
 

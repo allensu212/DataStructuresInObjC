@@ -16,12 +16,18 @@
 
 @implementation LinkedList
 
-#pragma mark - AddingLink
+-(instancetype)init{
+    if (self = [super init]) {
+        _count = 0;
+    }
+    return self;
+}
 
 -(void)addLinkWithKey:(NSNumber *)key{
     
     if (self.headNode.key == nil) {
         self.headNode = [[LLNode alloc]initWithKey:key];
+        self.count = 1;
         self.currentNode = self.headNode;
         self.currentNode.key = self.headNode.key;
         return;
@@ -32,8 +38,27 @@
         nodeToAdd.key = key;
         self.currentNode.nextNode = nodeToAdd;
         self.currentNode = self.currentNode.nextNode;
+        self.count += 1;
     }else {
         self.currentNode = self.currentNode.nextNode;
+    }
+}
+
+-(void)removeLinkAtIndex:(NSNumber *)index{
+}
+
+-(int)countLinkedList{
+    if (self.headNode.key == nil) {
+        return 0;
+    }else {
+        self.currentNode = self.headNode;
+        int x = 1;
+        
+        while (self.currentNode.nextNode != nil) {
+            self.currentNode = self.currentNode.nextNode;
+            x++;
+        }
+        return x;
     }
 }
 

@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 allensu. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "WSLabViewController.h"
 #import "LinkedList.h"
 #import "LLNode.h"
 
-@interface MasterViewController ()
+@interface WSLabViewController ()
 @property (nonatomic, copy) NSArray *numberList;
 @property (nonatomic, strong) LinkedList *linkedList;
 @end
 
-@implementation MasterViewController
+@implementation WSLabViewController
 
 #pragma mark - LazyInstantiation
 
@@ -44,6 +44,8 @@
     for (NSNumber *key in self.numberList) {
         [self.linkedList addLinkWithKey:key];
     }
+    
+    [self.linkedList countLinkedList];
 }
 
 @end
