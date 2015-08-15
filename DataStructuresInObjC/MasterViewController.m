@@ -7,21 +7,43 @@
 //
 
 #import "MasterViewController.h"
+#import "LinkedList.h"
+#import "LLNode.h"
 
 @interface MasterViewController ()
-
+@property (nonatomic, copy) NSArray *numberList;
+@property (nonatomic, strong) LinkedList *linkedList;
 @end
 
 @implementation MasterViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+#pragma mark - LazyInstantiation
+
+-(NSArray *)numberList{
+    if (!_numberList) {
+        _numberList = @[@1, @3, @2, @5, @4, @6, @9];
+    }
+    return _numberList;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(LinkedList *)linkedList{
+    if (!_linkedList) {
+        _linkedList = [[LinkedList alloc]init];
+    }
+    return _linkedList;
+}
+
+#pragma mark - LifeCycle
+
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    [self addNodeToLinkedList];
+}
+
+-(void)addNodeToLinkedList{
+    for (NSNumber *key in self.numberList) {
+        [self.linkedList addLinkWithKey:key];
+    }
 }
 
 @end

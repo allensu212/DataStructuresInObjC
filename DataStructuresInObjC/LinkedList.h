@@ -10,4 +10,6 @@
 
 @interface LinkedList : NSObject
 
+-(void)addLinkWithKey:(NSNumber *)key;
+
 @end

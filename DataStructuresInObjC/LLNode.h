@@ -10,4 +10,10 @@
 
 @interface LLNode : NSObject
 
+@property (nonatomic, assign) NSNumber *key;
+@property (nonatomic, strong) LLNode *previousNode;
+@property (nonatomic, strong) LLNode *nextNode;
+
+-(instancetype)initWithKey:(NSNumber *)key;
+
 @end

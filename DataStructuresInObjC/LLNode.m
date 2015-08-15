@@ -10,4 +10,11 @@
 
 @implementation LLNode
 
+-(instancetype)initWithKey:(NSNumber *)key{
+    if (self = [super init]) {
+        _key = key;
+    }
+    return self;
+}
+
 @end
