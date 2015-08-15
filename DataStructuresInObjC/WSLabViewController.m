@@ -62,7 +62,9 @@
 #pragma mark - AVLTree
 
 -(void)addNodeToAVLTree{
-    NSLog(@"height: %d", self.binarySearchTree.height);
+    for (NSNumber *key in self.numberList) {
+        [self.binarySearchTree addNodeWithKey:key];
+    }
 }
 
 @end
