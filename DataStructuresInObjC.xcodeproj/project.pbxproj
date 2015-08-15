@@ -16,6 +16,7 @@
 		BE5D70131B7F723F004AB240 /* DataStructuresInObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70121B7F723F004AB240 /* DataStructuresInObjCTests.m */; };
 		BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D701F1B7F7297004AB240 /* LinkedList.m */; };
 		BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70221B7F72A8004AB240 /* LLNode.m */; };
+		BE5D70281B7F8CCA004AB240 /* AVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70271B7F8CCA004AB240 /* AVLTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		BE5D701F1B7F7297004AB240 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		BE5D70211B7F72A8004AB240 /* LLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNode.h; sourceTree = "<group>"; };
 		BE5D70221B7F72A8004AB240 /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
+		BE5D70261B7F8CCA004AB240 /* AVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
+		BE5D70271B7F8CCA004AB240 /* AVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 			children = (
 				BE5D70211B7F72A8004AB240 /* LLNode.h */,
 				BE5D70221B7F72A8004AB240 /* LLNode.m */,
+				BE5D70261B7F8CCA004AB240 /* AVLTree.h */,
+				BE5D70271B7F8CCA004AB240 /* AVLTree.m */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
 				BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */,
+				BE5D70281B7F8CCA004AB240 /* AVLTree.m in Sources */,
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,
 				BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */,
 			);
@@ -460,6 +466,7 @@
 				BE5D70181B7F723F004AB240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE5D70191B7F723F004AB240 /* Build configuration list for PBXNativeTarget "DataStructuresInObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				BE5D701B1B7F723F004AB240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
