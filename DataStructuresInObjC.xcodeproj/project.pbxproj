@@ -17,6 +17,9 @@
 		BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D701F1B7F7297004AB240 /* LinkedList.m */; };
 		BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70221B7F72A8004AB240 /* LLNode.m */; };
 		BE5D70281B7F8CCA004AB240 /* AVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70271B7F8CCA004AB240 /* AVLTree.m */; };
+		BE5D702B1B7FC4A3004AB240 /* QNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D702A1B7FC4A3004AB240 /* QNode.m */; };
+		BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D702D1B7FC4AF004AB240 /* Stack.m */; };
+		BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70301B7FC4B8004AB240 /* Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		BE5D70221B7F72A8004AB240 /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
 		BE5D70261B7F8CCA004AB240 /* AVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
 		BE5D70271B7F8CCA004AB240 /* AVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLTree.m; sourceTree = "<group>"; };
+		BE5D70291B7FC4A3004AB240 /* QNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNode.h; sourceTree = "<group>"; };
+		BE5D702A1B7FC4A3004AB240 /* QNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNode.m; sourceTree = "<group>"; };
+		BE5D702C1B7FC4AF004AB240 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		BE5D702D1B7FC4AF004AB240 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		BE5D702F1B7FC4B8004AB240 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		BE5D70301B7FC4B8004AB240 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +160,10 @@
 			children = (
 				BE5D701E1B7F7297004AB240 /* LinkedList.h */,
 				BE5D701F1B7F7297004AB240 /* LinkedList.m */,
+				BE5D702C1B7FC4AF004AB240 /* Stack.h */,
+				BE5D702D1B7FC4AF004AB240 /* Stack.m */,
+				BE5D702F1B7FC4B8004AB240 /* Queue.h */,
+				BE5D70301B7FC4B8004AB240 /* Queue.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -162,6 +175,8 @@
 				BE5D70221B7F72A8004AB240 /* LLNode.m */,
 				BE5D70261B7F8CCA004AB240 /* AVLTree.h */,
 				BE5D70271B7F8CCA004AB240 /* AVLTree.m */,
+				BE5D70291B7FC4A3004AB240 /* QNode.h */,
+				BE5D702A1B7FC4A3004AB240 /* QNode.m */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -266,11 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */,
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
+				BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */,
 				BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */,
 				BE5D70281B7F8CCA004AB240 /* AVLTree.m in Sources */,
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,
+				BE5D702B1B7FC4A3004AB240 /* QNode.m in Sources */,
 				BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
