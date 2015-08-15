@@ -39,10 +39,8 @@
     }
     
     if (abs((self.rightTree.height - self.leftTree.height)) <= 1) {
-        NSLog(@"balanced");
         return YES;
     }else {
-        NSLog(@"not balanced");
         return NO;
     }
 }
