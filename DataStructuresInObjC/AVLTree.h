@@ -10,4 +10,5 @@
 
 @interface AVLTree : NSObject
 @property (nonatomic, assign) int height;
+-(void)addNodeWithKey:(NSNumber *)key;
 @end
