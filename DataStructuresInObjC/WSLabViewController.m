@@ -11,12 +11,14 @@
 #import "LLNode.h"
 #import "AVLTree.h"
 #import "Queue.h"
+#import "Stack.h"
 
 @interface WSLabViewController ()
 @property (nonatomic, copy) NSArray *numberList;
 @property (nonatomic, strong) LinkedList *linkedList;
 @property (nonatomic, strong) AVLTree *binarySearchTree;
 @property (nonatomic, strong) Queue *queue;
+@property (nonatomic, strong) Stack *stack;
 @end
 
 @implementation WSLabViewController
@@ -51,6 +53,13 @@
     return _queue;
 }
 
+-(Stack *)stack{
+    if (!_stack) {
+        _stack = [[Stack alloc]init];
+    }
+    return _stack;
+}
+
 #pragma mark - LifeCycle
 
 -(void)viewDidLoad{
@@ -58,9 +67,16 @@
     [self addNodeToLinkedList];
     [self addNodeToAVLTree];
     [self enQueue];
+    [self pushIntoStack];
 }
 
 #pragma mark - StackAndQueue
+
+-(void)pushIntoStack{
+    for (NSNumber *key in self.numberList) {
+        [self.stack pushWithKey:key];
+    }    
+}
 
 -(void)enQueue{
     for (NSNumber *key in self.numberList) {

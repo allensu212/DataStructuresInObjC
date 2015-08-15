@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Stack : NSObject
-
+@property (nonatomic, assign) int count;
+-(void)pop;
+-(void)pushWithKey:(NSNumber *)key;
+-(NSNumber *)peek;
+-(BOOL)isEmpty;
+-(int)countStack;
 @end
