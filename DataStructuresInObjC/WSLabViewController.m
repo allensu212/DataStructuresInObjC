@@ -23,7 +23,7 @@
 
 -(NSArray *)numberList{
     if (!_numberList) {
-        _numberList = @[@1, @3, @2, @5, @4, @6, @9];
+        _numberList = @[@1, @3, @2, @5, @4, @6, @7];
     }
     return _numberList;
 }
@@ -65,6 +65,8 @@
     for (NSNumber *key in self.numberList) {
         [self.binarySearchTree addNodeWithKey:key];
     }
+    
+    [self.binarySearchTree isTreeBalanced];
 }
 
 @end

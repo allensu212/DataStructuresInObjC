@@ -10,17 +10,41 @@
 
 @interface AVLTree ()
 @property (nonatomic, assign) NSNumber *key;
+@property (nonatomic, assign) int height;
 @property (nonatomic, strong) AVLTree *leftTree;
 @property (nonatomic, strong) AVLTree *rightTree;
 @end
 
 @implementation AVLTree
 
+-(int)height{
+    if (!_height) {
+        return -1;
+    }else {
+        return _height;
+    }
+}
+
 -(instancetype)init{
     if (self = [super init]) {
         _height = -1;
     }
     return self;
+}
+
+-(BOOL)isTreeBalanced{
+    
+    if (!self.key) {
+        return NO;
+    }
+    
+    if (abs((self.rightTree.height - self.leftTree.height)) <= 1) {
+        NSLog(@"balanced");
+        return YES;
+    }else {
+        NSLog(@"not balanced");
+        return NO;
+    }
 }
 
 -(void)addNodeWithKey:(NSNumber *)key{

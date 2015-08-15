@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface AVLTree : NSObject
-@property (nonatomic, assign) int height;
 -(void)addNodeWithKey:(NSNumber *)key;
+-(BOOL)isTreeBalanced;
 @end
