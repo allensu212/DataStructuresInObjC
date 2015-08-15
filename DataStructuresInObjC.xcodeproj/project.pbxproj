@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		BE5D6FF91B7F723E004AB240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FF81B7F723E004AB240 /* main.m */; };
 		BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */; };
-		BE5D6FFF1B7F723E004AB240 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFE1B7F723E004AB240 /* ViewController.m */; };
+		BE5D6FFF1B7F723E004AB240 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */; };
 		BE5D70021B7F723E004AB240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70001B7F723E004AB240 /* Main.storyboard */; };
 		BE5D70041B7F723E004AB240 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70031B7F723E004AB240 /* Images.xcassets */; };
 		BE5D70071B7F723E004AB240 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5D70051B7F723E004AB240 /* LaunchScreen.xib */; };
 		BE5D70131B7F723F004AB240 /* DataStructuresInObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70121B7F723F004AB240 /* DataStructuresInObjCTests.m */; };
+		BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D701F1B7F7297004AB240 /* LinkedList.m */; };
+		BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70221B7F72A8004AB240 /* LLNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		BE5D6FF81B7F723E004AB240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE5D6FFA1B7F723E004AB240 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE5D6FFD1B7F723E004AB240 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE5D6FFE1B7F723E004AB240 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE5D6FFD1B7F723E004AB240 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		BE5D70011B7F723E004AB240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE5D70031B7F723E004AB240 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE5D70061B7F723E004AB240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BE5D700C1B7F723F004AB240 /* DataStructuresInObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresInObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5D70111B7F723F004AB240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5D70121B7F723F004AB240 /* DataStructuresInObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructuresInObjCTests.m; sourceTree = "<group>"; };
+		BE5D701E1B7F7297004AB240 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		BE5D701F1B7F7297004AB240 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		BE5D70211B7F72A8004AB240 /* LLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNode.h; sourceTree = "<group>"; };
+		BE5D70221B7F72A8004AB240 /* LLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,11 @@
 			children = (
 				BE5D6FFA1B7F723E004AB240 /* AppDelegate.h */,
 				BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */,
-				BE5D6FFD1B7F723E004AB240 /* ViewController.h */,
-				BE5D6FFE1B7F723E004AB240 /* ViewController.m */,
-				BE5D70001B7F723E004AB240 /* Main.storyboard */,
+				BE5D701D1B7F727A004AB240 /* Source */,
+				BE5D701C1B7F7274004AB240 /* Controller */,
+				BE5D6FFE1B7F723E004AB240 /* MasterViewController.m */,
 				BE5D70031B7F723E004AB240 /* Images.xcassets */,
+				BE5D70001B7F723E004AB240 /* Main.storyboard */,
 				BE5D70051B7F723E004AB240 /* LaunchScreen.xib */,
 				BE5D6FF61B7F723E004AB240 /* Supporting Files */,
 			);
@@ -117,6 +124,41 @@
 				BE5D70111B7F723F004AB240 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE5D701C1B7F7274004AB240 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D6FFD1B7F723E004AB240 /* MasterViewController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BE5D701D1B7F727A004AB240 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D70241B7F72B0004AB240 /* Factories */,
+				BE5D70251B7F72BB004AB240 /* Structures */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		BE5D70241B7F72B0004AB240 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D701E1B7F7297004AB240 /* LinkedList.h */,
+				BE5D701F1B7F7297004AB240 /* LinkedList.m */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		BE5D70251B7F72BB004AB240 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D70211B7F72A8004AB240 /* LLNode.h */,
+				BE5D70221B7F72A8004AB240 /* LLNode.m */,
+			);
+			name = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5D6FFF1B7F723E004AB240 /* ViewController.m in Sources */,
+				BE5D6FFF1B7F723E004AB240 /* MasterViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
+				BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */,
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,
+				BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
