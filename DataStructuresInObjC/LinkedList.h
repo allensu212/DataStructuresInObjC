@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class LLNode;
+
 @interface LinkedList : NSObject
 @property (nonatomic, assign) int count;
 -(void)addLinkWithKey:(NSNumber *)key;
 -(void)removeLinkAtIndex:(NSNumber *)index;
 -(int)countLinkedList;
+-(void)deleteDuplicateNode:(LLNode *)headNode;
 @end

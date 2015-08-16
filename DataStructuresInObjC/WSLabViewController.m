@@ -37,10 +37,6 @@ typedef void(^CreateHashTableCompletionBlock)(void);
     [self addNodeToAVLTree];
     [self enQueue];
     [self pushIntoStack];
-    
-    [self createHashTableCompletionBlock:^{
-        [self searchForItemInHashTable];
-    }];
 }
 
 #pragma mark - HashTable
@@ -78,6 +74,7 @@ typedef void(^CreateHashTableCompletionBlock)(void);
         [self.linkedList addLinkWithKey:key];
     }
     [self.linkedList countLinkedList];
+    [self.linkedList deleteDuplicateNode:[[LLNode alloc]initWithKey:@2]];
 }
 
 #pragma mark - AVLTree

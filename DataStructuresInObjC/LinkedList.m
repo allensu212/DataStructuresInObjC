@@ -8,6 +8,7 @@
 
 #import "LinkedList.h"
 #import "LLNode.h"
+#import "HashTable.h"
 
 @interface LinkedList ()
 @property (nonatomic, strong) LLNode *headNode;
@@ -21,6 +22,33 @@
         _count = 0;
     }
     return self;
+}
+
+-(void)deleteDuplicateNode:(LLNode *)headNode{
+    
+    if (!headNode) {
+        return;
+    }
+    
+    LLNode *currentNode = headNode.nextNode;
+    
+    while (currentNode != nil) {
+        LLNode *runnerNode = headNode;
+        while (runnerNode != currentNode) {
+            if (runnerNode.key == currentNode.key) {
+                LLNode *tempNode = currentNode.nextNode;
+                headNode.nextNode = tempNode;
+                currentNode = tempNode;
+                break;
+            }
+            runnerNode = runnerNode.nextNode;
+        }
+        
+        if (runnerNode.key == currentNode.key) {
+            headNode = currentNode;
+            currentNode = currentNode.nextNode;
+        }
+    }
 }
 
 -(void)addLinkWithKey:(NSNumber *)key{
