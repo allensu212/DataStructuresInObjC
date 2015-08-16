@@ -10,4 +10,9 @@
 
 @interface StringManipulator : NSObject
 
+-(BOOL)isUniqueCharacter:(NSString *)testedString;
+-(void)reverseString:(NSString *)testedString;
+-(void)removeDuplicateCharactersInString:(NSString *)testedString;
+-(void)replaceSpacesInString:(NSString *)testedString;
+
 @end
