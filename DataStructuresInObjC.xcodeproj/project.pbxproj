@@ -22,6 +22,7 @@
 		BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70301B7FC4B8004AB240 /* Queue.m */; };
 		BEB2A55D1B800D7900C1F935 /* HashNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55C1B800D7900C1F935 /* HashNode.m */; };
 		BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55F1B800D8300C1F935 /* HashTable.m */; };
+		BEE7C19A1B8113B1005141B1 /* StringManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7C1991B8113B1005141B1 /* StringManipulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		BEB2A55C1B800D7900C1F935 /* HashNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashNode.m; sourceTree = "<group>"; };
 		BEB2A55E1B800D8300C1F935 /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
 		BEB2A55F1B800D8300C1F935 /* HashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashTable.m; sourceTree = "<group>"; };
+		BEE7C1981B8113B1005141B1 /* StringManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManipulator.h; sourceTree = "<group>"; };
+		BEE7C1991B8113B1005141B1 /* StringManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManipulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				BE5D70301B7FC4B8004AB240 /* Queue.m */,
 				BEB2A55E1B800D8300C1F935 /* HashTable.h */,
 				BEB2A55F1B800D8300C1F935 /* HashTable.m */,
+				BEE7C1981B8113B1005141B1 /* StringManipulator.h */,
+				BEE7C1991B8113B1005141B1 /* StringManipulator.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */,
+				BEE7C19A1B8113B1005141B1 /* StringManipulator.m in Sources */,
 				BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */,
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
