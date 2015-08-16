@@ -59,7 +59,31 @@
 #pragma mark - SearchingHashNode
 
 -(BOOL)searchWordWithFirstName:(NSString *)firstName lastName:(NSString *)lastName{
-    return YES;
+    
+    NSString *fullName = [NSString stringWithFormat:@"%@%@", firstName, lastName];
+    int hashIndex = [self createHashWithFullName:fullName];
+    
+    if (!self.hashNodeBuckets[hashIndex]) {
+        NSLog(@"name not found in hash table..");
+        return NO;
+    }else {
+        
+        HashNode *currentNode = self.hashNodeBuckets[hashIndex];
+        
+        while (currentNode != nil) {
+            
+            NSString *hashName = [NSString stringWithFormat:@"%@%@", currentNode.firstName, currentNode.lastName];
+            
+            if ([hashName isEqualToString:fullName]) {
+                NSLog(@"%@ found in hash table...", fullName);
+                return YES;
+            }
+            NSLog(@"searching for word through chained list...");
+            currentNode = currentNode.nextNode;
+        }
+    }
+    NSLog(@"name not found in hash table..");
+    return NO;
 }
 
 @end
