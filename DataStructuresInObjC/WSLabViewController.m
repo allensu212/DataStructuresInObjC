@@ -74,7 +74,6 @@ typedef void(^CreateHashTableCompletionBlock)(void);
         [self.linkedList addLinkWithKey:key];
     }
     [self.linkedList countLinkedList];
-    [self.linkedList deleteDuplicateNode:[[LLNode alloc]initWithKey:@2]];
 }
 
 #pragma mark - AVLTree

@@ -25,27 +25,18 @@
 }
 
 -(void)deleteDuplicateNode:(LLNode *)headNode{
-    
     if (!headNode) {
         return;
     }
     
-    LLNode *currentNode = headNode.nextNode;
+    LLNode *currentNode = headNode;
+    LLNode *nextNode = currentNode.nextNode;
     
     while (currentNode != nil) {
-        LLNode *runnerNode = headNode;
-        while (runnerNode != currentNode) {
-            if (runnerNode.key == currentNode.key) {
-                LLNode *tempNode = currentNode.nextNode;
-                headNode.nextNode = tempNode;
-                currentNode = tempNode;
-                break;
-            }
-            runnerNode = runnerNode.nextNode;
-        }
-        
-        if (runnerNode.key == currentNode.key) {
-            headNode = currentNode;
+        if (currentNode.key == nextNode.key) {
+            currentNode.nextNode = nextNode.nextNode;
+            currentNode = currentNode.nextNode;
+        }else {
             currentNode = currentNode.nextNode;
         }
     }
