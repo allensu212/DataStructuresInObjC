@@ -32,7 +32,7 @@
     LLNode *currentNode = headNode;
     LLNode *nextNode = currentNode.nextNode;
     
-    while (currentNode != nil) {
+    while (currentNode.nextNode != nil) {
         if (currentNode.key == nextNode.key) {
             currentNode.nextNode = nextNode.nextNode;
             currentNode = currentNode.nextNode;
