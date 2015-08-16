@@ -20,6 +20,8 @@
 		BE5D702B1B7FC4A3004AB240 /* QNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D702A1B7FC4A3004AB240 /* QNode.m */; };
 		BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D702D1B7FC4AF004AB240 /* Stack.m */; };
 		BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70301B7FC4B8004AB240 /* Queue.m */; };
+		BEB2A55D1B800D7900C1F935 /* HashNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55C1B800D7900C1F935 /* HashNode.m */; };
+		BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55F1B800D8300C1F935 /* HashTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		BE5D702D1B7FC4AF004AB240 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		BE5D702F1B7FC4B8004AB240 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		BE5D70301B7FC4B8004AB240 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		BEB2A55B1B800D7900C1F935 /* HashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashNode.h; sourceTree = "<group>"; };
+		BEB2A55C1B800D7900C1F935 /* HashNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashNode.m; sourceTree = "<group>"; };
+		BEB2A55E1B800D8300C1F935 /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		BEB2A55F1B800D8300C1F935 /* HashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,8 @@
 				BE5D702D1B7FC4AF004AB240 /* Stack.m */,
 				BE5D702F1B7FC4B8004AB240 /* Queue.h */,
 				BE5D70301B7FC4B8004AB240 /* Queue.m */,
+				BEB2A55E1B800D8300C1F935 /* HashTable.h */,
+				BEB2A55F1B800D8300C1F935 /* HashTable.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 				BE5D70271B7F8CCA004AB240 /* AVLTree.m */,
 				BE5D70291B7FC4A3004AB240 /* QNode.h */,
 				BE5D702A1B7FC4A3004AB240 /* QNode.m */,
+				BEB2A55B1B800D7900C1F935 /* HashNode.h */,
+				BEB2A55C1B800D7900C1F935 /* HashNode.m */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -281,11 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */,
 				BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */,
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
 				BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */,
 				BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */,
 				BE5D70201B7F7297004AB240 /* LinkedList.m in Sources */,
+				BEB2A55D1B800D7900C1F935 /* HashNode.m in Sources */,
 				BE5D70281B7F8CCA004AB240 /* AVLTree.m in Sources */,
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,
 				BE5D702B1B7FC4A3004AB240 /* QNode.m in Sources */,
