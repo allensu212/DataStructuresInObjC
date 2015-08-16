@@ -8,9 +8,6 @@
 
 #import "HashNode.h"
 
-@interface HashNode()
-@end
-
 @implementation HashNode
 
 @end
