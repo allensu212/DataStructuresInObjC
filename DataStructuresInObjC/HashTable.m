@@ -17,7 +17,7 @@
 
 #pragma mark - LazyInstantiation
 
--(NSArray *)hashNodeBuckets{
+-(NSMutableArray *)hashNodeBuckets{
     if (!_hashNodeBuckets) {
         _hashNodeBuckets = [[NSMutableArray alloc]init];
     }
@@ -28,7 +28,8 @@
 
 -(int)createHashWithFullName:(NSString *)fullName{
     //custom hash algorithm here...
-    return arc4random() % 10 + 1;
+    int hashIndex = (int)fullName.length;
+    return hashIndex;
 }
 
 #pragma mark - AddingHashNode
@@ -47,7 +48,6 @@
     if (!self.hashNodeBuckets[hashIndex]) {
         self.hashNodeBuckets[hashIndex] = childNode;
     }else {
-        
         //collision occured...
         headNode = self.hashNodeBuckets[hashIndex];
         childNode.nextNode = headNode;

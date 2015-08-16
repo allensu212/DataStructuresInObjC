@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface HashTable : NSObject
-
+-(void)addWordWithFirstName:(NSString *)firstName lastName:(NSString *)lastName;
+-(BOOL)searchWordWithFirstName:(NSString *)firstName lastName:(NSString *)lastName;
 @end
