@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3A57F11B817E7300DAA495 /* TrieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A57F01B817E7300DAA495 /* TrieNode.m */; };
+		BE3A57F41B817E8900DAA495 /* Trie.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3A57F31B817E8900DAA495 /* Trie.m */; };
 		BE5D6FF91B7F723E004AB240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FF81B7F723E004AB240 /* main.m */; };
 		BE5D6FFC1B7F723E004AB240 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFB1B7F723E004AB240 /* AppDelegate.m */; };
 		BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D6FFE1B7F723E004AB240 /* WSLabViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE3A57EF1B817E7300DAA495 /* TrieNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrieNode.h; sourceTree = "<group>"; };
+		BE3A57F01B817E7300DAA495 /* TrieNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrieNode.m; sourceTree = "<group>"; };
+		BE3A57F21B817E8900DAA495 /* Trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
+		BE3A57F31B817E8900DAA495 /* Trie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trie.m; sourceTree = "<group>"; };
 		BE5D6FF31B7F723E004AB240 /* DataStructuresInObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresInObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5D6FF71B7F723E004AB240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5D6FF81B7F723E004AB240 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 				BE5D70301B7FC4B8004AB240 /* Queue.m */,
 				BEB2A55E1B800D8300C1F935 /* HashTable.h */,
 				BEB2A55F1B800D8300C1F935 /* HashTable.m */,
+				BE3A57F21B817E8900DAA495 /* Trie.h */,
+				BE3A57F31B817E8900DAA495 /* Trie.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -187,6 +195,8 @@
 				BE5D702A1B7FC4A3004AB240 /* QNode.m */,
 				BEB2A55B1B800D7900C1F935 /* HashNode.h */,
 				BEB2A55C1B800D7900C1F935 /* HashNode.m */,
+				BE3A57EF1B817E7300DAA495 /* TrieNode.h */,
+				BE3A57F01B817E7300DAA495 /* TrieNode.m */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3A57F41B817E8900DAA495 /* Trie.m in Sources */,
 				BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */,
 				BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */,
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
@@ -302,6 +313,7 @@
 				BE5D6FF91B7F723E004AB240 /* main.m in Sources */,
 				BE5D702B1B7FC4A3004AB240 /* QNode.m in Sources */,
 				BE5D70231B7F72A8004AB240 /* LLNode.m in Sources */,
+				BE3A57F11B817E7300DAA495 /* TrieNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
