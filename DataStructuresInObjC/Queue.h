@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface Queue : NSObject
+
 -(void)enQueueWithKey:(NSNumber *)key;
 -(NSNumber *)deQueue;
+-(BOOL)isEmpty;
+-(int)countQueue;
+-(NSNumber *)peek;
+
 @end
