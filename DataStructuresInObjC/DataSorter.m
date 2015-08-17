@@ -14,4 +14,23 @@
 
 @implementation DataSorter
 
+-(NSArray *)insertionSort:(NSMutableArray *)unsortedArray{
+    
+    int comparingIndex;
+    int comparedKey;
+    
+    for (NSNumber *comparedIndex in unsortedArray) {
+        comparedKey = (int)unsortedArray[comparedIndex.intValue];
+        
+        for (comparingIndex = (int)comparedIndex; comparingIndex > -1; comparingIndex --) {
+            if (comparedKey < (int)unsortedArray[comparingIndex]) {
+                [unsortedArray removeObjectAtIndex:comparingIndex + 1];
+                //[unsortedArray insertObject:comparedKey atIndex:comparingIndex];
+            }
+        }
+    }
+    NSArray *sortedArray = (NSArray *)unsortedArray;
+    return sortedArray;
+}
+
 @end

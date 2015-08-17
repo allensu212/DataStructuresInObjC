@@ -10,10 +10,10 @@
 
 @interface DataSorter : NSObject
 
--(void)binarySearch:(NSArray *)unsortedArray;
--(NSArray *)insertionSort:(NSArray *)unsortedArray;
--(NSArray *)bubbleSort:(NSArray *)unsortedArray;
--(NSArray *)mergeSor:(NSArray *)unsortedArray;
--(NSArray *)quickSort:(NSArray *)unsortedArray;
+-(void)binarySearch:(NSMutableArray *)unsortedArray;
+-(NSArray *)insertionSort:(NSMutableArray *)unsortedArray;
+-(NSArray *)bubbleSort:(NSMutableArray *)unsortedArray;
+-(NSArray *)mergeSor:(NSMutableArray *)unsortedArray;
+-(NSArray *)quickSort:(NSMutableArray *)unsortedArray;
 
 @end
