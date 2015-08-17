@@ -36,15 +36,39 @@
 }
 
 -(NSNumber *)peek{
-    return self.topNode.key;
+    
+    if (self.topNode.key != nil) {
+        return self.topNode.key;
+    }
+    else {
+        return nil;
+    }
 }
 
 -(BOOL)isEmpty{
-    return NO;
+    if (self.topNode.key != nil) {
+        return NO;
+    }else {
+        return YES;
+    }
 }
 
 -(int)countStack{
-    return 1;
+    
+    int count = 0;
+    
+    if (!self.topNode.key) {
+        return 0;
+    }
+    
+    LLNode *currentNode = self.topNode;
+    
+    while (currentNode != nil) {
+        count++;
+        currentNode = currentNode.nextNode;
+    }
+    
+    return count;
 }
 
 @end
