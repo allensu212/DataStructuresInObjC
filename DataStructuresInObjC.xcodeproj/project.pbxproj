@@ -22,6 +22,7 @@
 		BE5D70311B7FC4B8004AB240 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5D70301B7FC4B8004AB240 /* Queue.m */; };
 		BEB2A55D1B800D7900C1F935 /* HashNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55C1B800D7900C1F935 /* HashNode.m */; };
 		BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB2A55F1B800D8300C1F935 /* HashTable.m */; };
+		BEC75DEA1B81879B00465F36 /* DataSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC75DE91B81879B00465F36 /* DataSorter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		BEB2A55C1B800D7900C1F935 /* HashNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashNode.m; sourceTree = "<group>"; };
 		BEB2A55E1B800D8300C1F935 /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
 		BEB2A55F1B800D8300C1F935 /* HashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashTable.m; sourceTree = "<group>"; };
+		BEC75DE81B81879B00465F36 /* DataSorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSorter.h; sourceTree = "<group>"; };
+		BEC75DE91B81879B00465F36 /* DataSorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSorter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				BE5D70301B7FC4B8004AB240 /* Queue.m */,
 				BEB2A55E1B800D8300C1F935 /* HashTable.h */,
 				BEB2A55F1B800D8300C1F935 /* HashTable.m */,
+				BEC75DE81B81879B00465F36 /* DataSorter.h */,
+				BEC75DE91B81879B00465F36 /* DataSorter.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC75DEA1B81879B00465F36 /* DataSorter.m in Sources */,
 				BEB2A5601B800D8300C1F935 /* HashTable.m in Sources */,
 				BE5D702E1B7FC4AF004AB240 /* Stack.m in Sources */,
 				BE5D6FFF1B7F723E004AB240 /* WSLabViewController.m in Sources */,
