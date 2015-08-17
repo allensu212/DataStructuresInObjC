@@ -33,7 +33,50 @@
 }
 
 -(NSNumber *)deQueue{
-    return self.topNode.key;
+    
+    if (!self.topNode) {
+        return nil;
+    }
+    QNode *queueItem = self.topNode;
+    
+    if (queueItem.nextNode != nil) {
+        self.topNode = queueItem.nextNode;
+    }else {
+        self.topNode = [[QNode alloc]init];
+    }
+    return queueItem.key;
+}
+
+-(NSNumber *)peek{
+    if (self.topNode != nil) {
+        return self.topNode.key;
+    }else {
+        return nil;
+    }
+}
+
+-(BOOL)isEmpty{
+    if (self.topNode != nil) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
+-(int)countQueue{
+    if (!self.topNode) {
+        return 0;
+    }
+    int count = 0;
+    
+    QNode *currentNode = self.topNode;
+    
+    while (currentNode != nil) {
+        count ++;
+        currentNode = currentNode.nextNode;
+    }
+    
+    return count;
 }
 
 @end
