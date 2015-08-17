@@ -7,7 +7,26 @@
 //
 
 #import "Trie.h"
+#import "TrieNode.h"
+
+@interface Trie ()
+@property (nonatomic, strong) TrieNode *rootNode;
+@end
 
 @implementation Trie
+
+-(instancetype)init{
+    if (self = [super init]) {
+        _rootNode = [[TrieNode alloc]init];
+    }
+    return self;
+}
+
+-(void)addWordWithKeyword:(NSString *)keyword{
+}
+
+-(NSArray *)findWordWithKeyword:(NSString *)keyword{
+    return nil;
+}
 
 @end

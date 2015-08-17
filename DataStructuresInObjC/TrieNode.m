@@ -17,11 +17,11 @@
 
 @implementation TrieNode
 
--(instancetype)initWithKeyString:(NSString *)keyString{
+-(instancetype)init{
     if (self = [super init]) {
-        _keyString = keyString;
         _level = 0;
         _isFinal = NO;
+        _childNodes = [[NSArray alloc]init];
     }
     return self;
 }

@@ -10,4 +10,7 @@
 
 @interface Trie : NSObject
 
+-(NSArray *)findWordWithKeyword:(NSString *)keyword;
+-(void)addWordWithKeyword:(NSString *)keyword;
+
 @end
